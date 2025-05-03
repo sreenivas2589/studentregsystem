@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" lang="en" />
+    <title>Student Registation system</title>
+    <meta name="viewport" content="width=device-width" initial-scale=1.0 />
+    <meta name="Student registration system" content="Student registration system with crud operations" />
+    <meta name="keywords" content="Students,Registration,CRUD,Records" />
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <link rel="icon" type="image/x-icon" href="student.png">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <h1>Complete Student Registration System</h1>
+        <p>
+            The Student Registration System in JavaScript is a simple web application coded in a JavaScript programming language.
+            This Simple Student Form Registration App is a project that can register student information.
+            It also includes creating,updating and deleting student records.
+        </p>
+        <br />
+        <p><a href="https://github.com/sreenivas2589/studentregsystem" target="_blank">GitHub</a></p>
+
+
+    </header>
+    
+        
+     <!--student form section-->
+    <section id="contactform">
+            <!--Student form-->
+         <form id="form">
+             <label for="student-name">Student Name:</label>
+             <input type="text" id="student-name" pattern="[a-zA-Z]*" placeholder="Enter your Name" required />
+
+             <label for="student-id">Student ID:</label>
+             <input type="number" id="student-id" placeholder="Enter your Student ID" required />
+
+             <label for="email-id">Email ID:</label>
+             <input type="email" id="email-id" placeholder="Enter your Email" required />
+
+             <label for="class-id">Student Class:</label>
+             <input type="number" id="class-id" placeholder="Enter your Class" required />
+
+             <label for="contact-no">Contact No.:</label>
+             <input type="number" id="contact-no" placeholder="Enter your Number" required />
+             <br />
+             <button type="submit">Register</button>
+             <br />
+         </form>
+
+    </section>
+
+    <!--display section-->
+    <section id="student-records">
+            <!--Students table-->
+            <table id="table">
+                
+                <tr id="records-container">
+                    
+                </tr>
+            </table>
+    </section>
+    <!--load JavaScript-->
+    <script src="Script1.js"></script>
+</body>
+</html>
